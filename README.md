@@ -42,7 +42,6 @@ Siéntase libre de usar cualquier flujo de trabajo con el que se sienta cómodo.
 
 Como se mencionó anteriormente, hay muchas formas de alojar su proyecto de forma gratuita. Nuestros anfitriones recomendados son:
 
-- [GitHub Pages](https://yeiserdeveloper.github.io/single-price-grid-component-master/)
 - [Surge](https://unused-plant.surge.sh)
 - [Netlify](https://celebrated-otter-4e3e1e.netlify.app/)
 
