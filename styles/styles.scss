@@ -1,0 +1,164 @@
+// Import
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+// Variables
+$Cyan: #4abebd;
+$Cyan-dark: #2bb3b1;
+$Bright-Yellow: #c0df34;
+$Light-Gray: #e5eff5;
+$Grayish-Blue: #98a6bd;
+$Font-Family: 'Karla', sans-serif;
+$Font-size: 16px;
+$Regular: 400;
+$Bold: 700;
+
+// General Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        font-family: $Font-Family;
+        background: $Light-Gray;
+        line-height: 1.5;
+
+        .container {
+            display: grid; 
+            grid-auto-columns: 1fr; 
+            grid-template-columns: 1fr; 
+            grid-template-rows: 1fr; 
+            grid-template-areas: 
+                ". . . ."
+                ". d1 d1 ."
+                ". d2 d3 ."
+                ". . . .";  
+            margin-top: 5%;
+            
+
+            .description {
+                background: #fff;
+                padding-top: 40px;
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-bottom: 35px;
+                border-radius: 10px 10px 0 0;
+
+                h3 {
+                    color: $Cyan-dark;
+                }
+                h4 {
+                    color: $Bright-Yellow;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: $Grayish-Blue;
+                }
+            }
+            .d1 {
+                grid-area: d1;
+            }
+
+            .subcription {
+                display: block;
+                background: $Cyan-dark;
+                color: $Light-Gray;
+                padding: 40px;
+                border-radius: 0 0 0 10px;
+
+                h3 {
+                    margin-bottom: 20px;
+                }
+
+                p.price {
+                    font-size: 30px;
+                    font-weight: $Bold;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .date {
+                        font-size: $Font-size;
+                        color: #ffffff8f;
+                        font-weight: $Regular;
+                    }
+                }
+
+                .info {
+                    font-size: $Font-size;
+                }
+
+                a {
+                    padding: 15px;
+                    display: block;
+                    text-align: center;
+                    border-radius: 5px;
+                    font-size: 17px;
+                    color: #e5eff5;
+                    text-decoration: none;
+                    font-weight: $Bold;
+                    background: $Bright-Yellow;
+                    margin-top: 20px;
+                    -webkit-box-shadow: 5px 5px 6px -2px #68686866; 
+                    box-shadow: 5px 5px 6px -2px #68686866;
+                }
+            }
+            .d2 {
+                grid-area: d2;
+            }
+
+            .information {
+                background: $Cyan;
+                color: $Light-Gray;
+                border-radius: 0 0 10px 0;
+                padding: 40px;
+
+                p {
+                    text-align: left;
+                    width: 90%;
+                    margin-top: 20px;
+                    color: #e5eff5b5;
+                    font-weight: $Regular;
+                }
+            }
+            .d3 {
+                grid-area: d3;
+            }
+        }
+
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            font-weight: 600;
+
+            a {
+                color: hsl(228, 45%, 44%);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        body {
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                margin: 90px 40px;
+                margin-bottom: 0;
+                
+                .description {
+                    border-radius: 10px 10px 0 0;
+                }
+                .subcription {
+                    border-radius: 0 0 0 0;
+                }
+                .information {
+                    border-radius: 0 0 10px 10px;
+                }
+            }
+        }
+    }
+}
